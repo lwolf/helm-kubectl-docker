@@ -2,8 +2,8 @@ FROM alpine:3.4
 
 MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com@gmail.com>
 
-ENV KUBE_LATEST_VERSION=v1.5.2
-ENV HELM_VERSION=v2.1.3
+ENV KUBE_LATEST_VERSION=v1.7.11
+ENV HELM_VERSION=v2.7.2
 ENV HELM_FILENAME=helm-${HELM_VERSION}-linux-amd64.tar.gz
 
 
