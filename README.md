@@ -3,7 +3,12 @@ docker image with helm and kubectl installed
 
 Based on alpine
 
-KUBECTL_VERSION=v1.5.2
+https://hub.docker.com/r/lwolf/helm-kubectl-docker
 
-HELM_VERSION=v2.1.3
+|Tag       | Alpine |   Kubectl    | Helm |
+|:--------:|:------:|:------------:|:----:|
+|latest    |3.6     |1.7.11        |2.7.2 |
+|v171_272  |3.6     |1.7.11        |2.7.2 |
+|v152_213  |3.6     |1.6.4         |2.1.3 |
+
 

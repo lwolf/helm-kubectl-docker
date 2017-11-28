@@ -1,6 +1,6 @@
 FROM alpine:3.4
 
-MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com@gmail.com>
+MAINTAINER Sergii Nuzhdin <ipaq.lw@gmail.com>
 
 ENV KUBE_LATEST_VERSION=v1.7.11
 ENV HELM_VERSION=v2.7.2
