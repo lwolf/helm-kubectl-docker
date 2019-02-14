@@ -5,9 +5,12 @@ Based on alpine
 
 https://hub.docker.com/r/lwolf/helm-kubectl-docker
 
+NOTE: dockerfile is being auto build daily, check docker hub for the latest resease
+
 |Tag        | Alpine |   Kubectl    | Helm  |
 |:---------:|:------:|:------------:|:-----:|
-|latest     |3.6     |1.10.3        |2.12.3 |
+|latest     |3.9     |1.10.13        |2.12.3 |
+|v1.10.13-v2.12.3 |3.9     |1.10.13        |2.12.3 |  
 |v1103_2123 |3.6     |1.10.3        |2.12.3 |  
 |v1103_291  |3.4     |1.10.3        |2.9.1  |
 |v193_281   |3.4     |1.9.3         |2.8.1  |

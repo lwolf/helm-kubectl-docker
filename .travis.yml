@@ -1,0 +1,26 @@
+sudo: 'required'
+
+language: python
+python:
+  - "3.6"
+
+# needed for the docker pipe
+services:
+- docker
+
+env:
+  global:
+    - DOCKER_CLI_EXPERIMENTAL=enabled
+
+git:
+  depth: 1
+
+before_install:
+  - sudo apt update -y
+  - sudo apt install --only-upgrade jq curl docker-ce wget tar -y
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+jobs:
+  include:
+    - stage: build
+      script: bash ./build.sh
