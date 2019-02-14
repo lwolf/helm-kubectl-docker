@@ -15,7 +15,8 @@ docker build -t ${DOCKER_REPO}:${RELEASE} \
     --build-arg K8S_VERSION=${K8S_VERSION} \
     --build-arg HELM_VERSION=${HELM_VERSION} .
 
-docker tag -t ${DOCKER_REPO}:${RELEASE} ${DOCKER_REPO}:latest
+docker tag ${DOCKER_REPO}:${RELEASE} ${DOCKER_REPO}:latest
 
 # Push image
 docker push ${DOCKER_REPO}:${RELEASE}
+docker push ${DOCKER_REPO}:latest
