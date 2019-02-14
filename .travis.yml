@@ -17,4 +17,4 @@ before_install:
 jobs:
   include:
     - stage: build
-      script: ./build.sh
+      script: bash ./build.sh
