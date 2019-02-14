@@ -11,9 +11,11 @@ export RELEASE=${K8S_VERSION}-${HELM_VERSION}
 docker manifest inspect ${DOCKER_REPO}:${RELEASE} > /dev/null && echo "Version ${RELEASE} is already exists" && exit 0
 
 # Build image
-docker build -t $DOCKER_REPO:${RELEASE} \
+docker build -t ${DOCKER_REPO}:${RELEASE} \
     --build-arg K8S_VERSION=${K8S_VERSION} \
     --build-arg HELM_VERSION=${HELM_VERSION} .
+
+docker tag -t ${DOCKER_REPO}:${RELEASE} ${DOCKER_REPO}:latest
 
 # Push image
 docker push ${DOCKER_REPO}:${RELEASE}
