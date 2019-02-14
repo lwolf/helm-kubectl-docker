@@ -16,4 +16,4 @@ docker build -t $DOCKER_REPO:${RELEASE} \
     --build-arg HELM_VERSION=${HELM_VERSION} .
 
 # Push image
-# docker push ${DOCKER_REPO}:${RELEASE}
+docker push ${DOCKER_REPO}:${RELEASE}
