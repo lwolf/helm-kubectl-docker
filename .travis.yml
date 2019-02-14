@@ -16,6 +16,8 @@ git:
   depth: 1
 
 before_install:
+  - sudo apt update -y
+  - sudo apt install --only-upgrade jq curl docker-ce wget tar -y
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 jobs:
