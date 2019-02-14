@@ -8,6 +8,10 @@ python:
 services:
 - docker
 
+env:
+  global:
+    - DOCKER_CLI_EXPERIMENTAL=enabled
+
 git:
   depth: 1
 
