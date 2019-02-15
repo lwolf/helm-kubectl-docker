@@ -5,7 +5,7 @@ Based on alpine
 
 https://hub.docker.com/r/lwolf/helm-kubectl-docker
 
-NOTE: dockerfile is being auto build daily, check docker hub for the latest resease
+:heavy_exclamation_mark: dockerfile is now being autobuild daily. The table below could be outdated, check docker hub for the latest release
 
 |Tag        | Alpine |   Kubectl    | Helm  |
 |:---------:|:------:|:------------:|:-----:|
