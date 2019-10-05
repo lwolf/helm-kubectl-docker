@@ -20,8 +20,13 @@ docker build -t ${DOCKER_REPO}:${RELEASE} \
     --build-arg K8S_VERSION=${K8S_VERSION} \
     --build-arg HELM_VERSION=${HELM_VERSION} .
 
+if [ "$HELM_RELEASE" != "helm3" ];then
 docker tag ${DOCKER_REPO}:${RELEASE} ${DOCKER_REPO}:latest
+fi
 
 # Push image
 docker push ${DOCKER_REPO}:${RELEASE}
+
+if [ "$HELM_RELEASE" != "helm3" ];then
 docker push ${DOCKER_REPO}:latest
+fi
